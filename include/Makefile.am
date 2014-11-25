@@ -1,0 +1,4 @@
+EXTRA_DIST = 
+SUBDIRS = 
+noinst_HEADERS = 
+BUILT_SOURCES = lexer.h
