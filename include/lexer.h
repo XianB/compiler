@@ -54,7 +54,7 @@ struct token_t {	/*记号的数据结构*/
 
 /*类型是token类型的*/
 #if 0
-token token_table[] = {
+static token token_tab[] = {
 	{CONST_ID,	"PI",		3.1415926,	NULL},
 	{CONST_ID,	"E",		2.718282,	NULL},
 	{T,			"T",		0.0,		NULL},

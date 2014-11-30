@@ -6,11 +6,12 @@ int main(int argc, char **argv)
 	filename = argv[1];
 	init_scanner(filename);
 
-	int i = 8;
 	printf("type		lexeme		value		func\n");
-	while (i-- > 0) {
+	while (1) {
 		token tk = get_token();
-	printf("%d		%s		%lf	\n", tk.type, tk.lexeme, tk.value);
+		if (tk.type == NONTOKEN)
+			break;
+		printf("%d		%s		%lf		%x\n", tk.type, tk.lexeme, tk.value, tk.func_ptr);
 	}
 
 	return 0;
