@@ -148,7 +148,9 @@ static void program(void)
 		参照手册P75
 	 */
 	while (tk.type != NONTOKEN){
+		/*开始语句分析*/
 		statement();
+		/*每个语句以分号结束*/
 		matck_token(SEMICO);
 	}
 	back("program");
@@ -157,7 +159,11 @@ static void program(void)
 /*statement 的递归子程序*/
 static void statement(void)
 {
+	/*statement的文法
+	  statement --> origint_statement | scale_statement | rot_statement | for_statement
+	 */
 	enter("statement");
+
 	switch(tk.type) {
 		case ORIGIN:
 			origin_statement();
@@ -172,6 +178,7 @@ static void statement(void)
 			for_statement();
 			break;
 		default:
+			/*如果开始的记号不是语句的话就是语法错误了~*/
 			syntax_error(2);
 	}
 	back("statement");
@@ -180,13 +187,17 @@ static void statement(void)
 /*origin_statement的递归子程序*/
 static void origin_statement(void)
 {
+	/*origin设置初始化位置,所以需要两个表达式,一个计算出x,一个计算出y*/
+	/*origin_statement的文法是
+	 origin_statement -- > ORIGIN IS L_BRACKET expression COMMA expression R_BRACKET
+	 */
 	struct expr_node * tmp;
 
 	enter("origin_statement");
 	match_token(ORIGIN);
 	match_token(IS);
 	match_token(L_BRACKET);
-	tmp = expression();
+	tmp = expression();		/*在expression里会调用tree_trace来打印表达式树的,注意这里是语法分析,所以不需要计算出结果来*/
 	match_token(COMMA);
 	tmp = expression();
 	match_token(R_BRACKET);
@@ -197,8 +208,14 @@ static void origin_statement(void)
 /*scale_statement的递归子程序*/
 static void scale_statement(void)
 {
+	/*scale_statement设置比例因子,可以同时设置x和y的比例变换因子*/
+
+	/*scale_statement 的文法为
+		scale_statement --> SCALE IS L_BRACKET expression COMMA expression R_BRACKET
+	 */
 	struct expr_node * tmp;
 	enter("scale_statement");
+
 	match_token(SCALE);
 	match_token(IS);
 	match_token(L_BRACKET);
@@ -214,6 +231,10 @@ static void scale_statement(void)
 /*rot_statement的递归子程序*/
 static void rot_statement(void)
 {
+	/*rot_statement实现图像的旋转*/
+	/*rot_statement 的文法是
+		rot_statement --> ROT IS expression
+	 */
 	struct expr_node * tmp;
 
 	enter("rot_statement");
@@ -226,6 +247,12 @@ static void rot_statement(void)
 /*for_statement的递归子程序*/
 static void for_statement(void)
 {
+	/*for_statement 实现for循环语句,一定有T参数*/
+	/*
+	   for_statement --> FOR T FROM expression TO expression STEP expression DRAW L_BRACKET expression COMMA expression R_BRACKET
+	 
+	 */
+
 	struct expr_node * star_ptr, *end_prt, * step_prt, *x_ptr, *y_ptr;
 
 	enter("for_statement");
@@ -256,19 +283,42 @@ static void for_statement(void)
 }
 
 
+/*******************至此语句分析各个函数完成*********************************************************************/
+
+
+
+
+
+/****************************************************************************************************************/
 /*expression 的递归子程序*/
 static struct expr_node* expression(void)
 {
+	/*expression 构造表达式树,并且打印表达式树*/
+
+	/*
+	   expression --> term {(PLUS|MINUS) term}
+	 
+	   引入term的目的是提供优先级以及结合性的区分
+	   term含义为非终结符
+	   atom为原子表达式
+	   见P72
+	 */
+	/*左右子树节点的指针*/
 	struct expr_node * left, * right;
+	/*当前记号*/
 	token_type tk_tmp;
 
 	enter("expression");
+	/*分析左操作数得其语法树*/
 	left = term();
 	while(tk.type == PLUS || tk.type == MINUS) {
 		tk_tmp = tk.type;
 		match_token(tk_tmp);
+		/*分析右操作数得到其语法树*/
 		right = term();
+		/*构造运算的语法树,结果为左子树*/
 		left = make_expr_node(tk_tmp, left, right);
+
 	}
 
 	tree_trace(left);		/*打印表达式的语法树*/
@@ -279,6 +329,7 @@ static struct expr_node* expression(void)
 /*term 的递归子程序*/
 static struct expr_node * term(void)
 {
+	/*term -- >factor{(MUL|DIV)factor}*/
 	struct expr_node * left, * right;
 	token_type tk_tmp;
 
@@ -294,19 +345,26 @@ static struct expr_node * term(void)
 /*factor 的递归子程序*/
 static struct expr_node * factor(void)
 {
+	/*
+	 factor --> PLUS factor | MINUS factor | component
+	 */
 	struct expr_node * left, right;
 
+	/*匹配一元加运算*/
 	if (tk.type == PLUS) {
 		match_token(PLUS);
+		/*表达式退化为仅有右操作数的表达式*/
 		right = factor();
 	} else if(tk.type == MINUS) {
+		/*匹配一元减运算,表达式转化为二元减运算的表达式,即0-..*/
 		match_token(MINUS);
 		right = factor();
 		left = (struct expr_node *)malloc(sizeof(struct expr_node));
 		left->opcode = CONST_ID;
 		left->content.case_const = 0.0;
 		right = make_expr_node(MINUS, left, right);
-	} else right = component();
+		
+	} else right = component();			/*匹配非终结符component*/
 
 	return right;
 }
@@ -315,11 +373,17 @@ static struct expr_node * factor(void)
 /*component 的递归子程序*/
 static struct expr_node* component(void)
 {
+	/*component --> atom[POWER component]*/
 	struct expr_node * left, * right;
 
 	left = atom();
 	if (tk.type == POWER) {
 		match_token(POWER);
+		/*递归调用component以实现POWER的右结合,这里的表现方法既是,先把component计算完整的才行,所以要递归调用
+		 如2**3**4
+		 则是先算t = 3**4
+		 再算2**t
+		 */
 		right = component();
 		left = make_expr_node(POWER, left, right);
 	}
@@ -330,6 +394,10 @@ static struct expr_node* component(void)
 /*atom 的递归子程序*/
 static struct expr_node * atom(void)
 {
+	/*原子表达式,为原子表达式建立表达式树*/
+	/*
+	   atom --> CONST_ID | T | FUNC L_BRACKET expression R_BRACKET | L_BRACKET expression R_BRACKET
+	 */
 	struct token t = tk;
 	struct expr_node * address, * tmp;
 
