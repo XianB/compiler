@@ -3,8 +3,9 @@
  */
 
 #include <stdio.h>
+#include "../include/parser.h"
 
-extern void parser(char * file);
+//void parser(char * file);
 
 int main(int argc, char ** argv)
 {
@@ -14,4 +15,5 @@ int main(int argc, char ** argv)
 	}
 
 	parser(argv[1]);
+	return 0;
 }

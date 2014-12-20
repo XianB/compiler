@@ -1,7 +1,9 @@
 #include "../include/parser.h"
+#include <stdarg.h>
 
 static token tk;
 double parameter = 0;
+extern int lnum;
 
 /*一些辅助的宏函数*/
 #define enter(x) printf("enter in "); printf(x); printf("\n");
@@ -12,9 +14,9 @@ double parameter = 0;
 
 /*辅助函数的声明*/
 static void fetch_token(void);		/*从词法分析器中获得一个记号*/
-static void match_token(enum token_type atk); /*匹配一个记号*/
+static void match_token(enum token_type_t atk); /*匹配一个记号*/
 static void syntax_error(int case_of);			/*报告语法错误*/
-static err_msg(unsigned line_no, char * descrip, char * string);
+static void err_msg(unsigned line_no, char * descrip, char * string);
 static void print_syntax_tree(struct expr_node * root, int indent);
 
 /*非终结符的递归子程序声明*/
@@ -31,23 +33,28 @@ static struct expr_node * component(void);
 static struct expr_node * atom(void);
 
 /*外部接口与语法树构造函数声明*/
-extern void parser(char * src_filename);
-static struct expr_node *make_expr_node(enum token_type opcode, ...);
+void parser(char * src_filename);
+static struct expr_node *make_expr_node(enum token_type_t opcode, ...);
 
 /*通过词法分析器接口get_token函数获取一个记号*/
-static void fetch_token(void);
+static void fetch_token(void)
 {
 	tk = get_token();
-	if (token.type == ERRTOKEN)
+	if (tk.type == ERRTOKEN)
 		syntax_error(1);
 }
 
 /*匹配记号,如果不匹配则为语法错误,如果匹配则继续获取下一个记号*/
-static void match_token(enum token_type the_token)
+static void match_token(enum token_type_t the_token)
 {
 	if (tk.type != the_token)
 		syntax_error(2);
 	fetch_token();
+	/*
+	if (tk.type == DRAW)
+		printf("hehehe\n");
+	*/
+	
 }
 
 /*语法错误情况的处理*/
@@ -55,10 +62,10 @@ static void syntax_error(int case_of)
 {
 	switch(case_of) {
 		case 1: 
-				err_msg(line_no, "错误的记号", tk.lexeme);
+				err_msg(lnum, "错误的记号", tk.lexeme);
 				break;
 		case 2:
-				err_msg(line_no, "不是预期的记号", tk.lexeme);
+				err_msg(lnum, "不是预期的记号", tk.lexeme);
 				break;
 
 	}
@@ -68,7 +75,7 @@ static void syntax_error(int case_of)
 /*打印错误信息*/
 void err_msg(unsigned line_no, char * descrip, char * string)
 {
-	printf("line no %5d: %s %s!\n", line_no, descrip, string);
+	printf("line no %5d: %s %s\n", line_no, descrip, string);
 	close_scanner();
 	exit(1);
 }
@@ -80,36 +87,36 @@ void print_syntax_tree(struct expr_node * root, int indent)
 
 	for (temp = 1; temp <= indent; temp++) {
 		printf("\t");	/*缩进*/
-		switch(root->opcode) {
-			case PLUS:
-				printf("%s\n", "+");
-				break;
-			case MINUS:
-				printf("%s\n", "-");
-				break;
-			case MUL:
-				printf("%s\n", "*");
-				break;
-			case DIV:
-				printf("%s\n", "/");
-				break;
-			case POWER:
-				printf("%s\n", "**");
-				break;
-			case FUNC:
-				printf("%x\n", root->content.case_func.match_func_ptr);
-				break;
-			case CONST_ID:
-				printf("%f\n", root->content.case_const);
-				break;
-			case T:
-				printf("%s\n", "T");
-				break;
-			default:
-				printf("ERROR TREE NODE!\n");
-				exit(0);
-		}
 	}
+	switch(root->opcode) {
+		case PLUS:
+			printf("%s\n", "+");
+			break;
+		case MINUS:
+			printf("%s\n", "-");
+			break;
+		case MUL:
+			printf("%s\n", "*");
+			break;
+		case DIV:
+			printf("%s\n", "/");
+			break;
+		case POWER:
+			printf("%s\n", "**");
+			break;
+		case FUNC:
+			printf("%x\n", root->content.case_func.math_func_ptr);
+			break;
+		case CONST_ID:
+			printf("%f\n", root->content.case_const);
+			break;
+		case T:
+			printf("%s\n", "T");
+			break;
+		default:
+			printf("ERROR TREE NODE!\n");
+			exit(0);
+		}
 
 	/*叶子节点了,直接结束,不再递归分析子树了~因为没有子树了*/
 	if (root->opcode == CONST_ID || root->opcode == T)
@@ -124,7 +131,7 @@ void print_syntax_tree(struct expr_node * root, int indent)
 	}
 }
 
-void praser(char * src_filename)
+void parser(char * src_filename)
 {
 	enter("parser");
 	if (!init_scanner(src_filename)) {
@@ -151,7 +158,7 @@ static void program(void)
 		/*开始语句分析*/
 		statement();
 		/*每个语句以分号结束*/
-		matck_token(SEMICO);
+		match_token(SEMICO);
 	}
 	back("program");
 }
@@ -253,30 +260,41 @@ static void for_statement(void)
 	 
 	 */
 
-	struct expr_node * star_ptr, *end_prt, * step_prt, *x_ptr, *y_ptr;
+	struct expr_node *start_ptr, *end_ptr, *step_ptr, *x_ptr, *y_ptr;
 
 	enter("for_statement");
 	match_token(FOR);
 	call_match("FOR");
+
 	match_token(T);
 	call_match("T");
+
 	match_token(FROM);
 	call_match("FROM");
+
 	start_ptr = expression();
 	match_token(TO);
 	call_match("TO");
+
 	end_ptr = expression();
 	match_token(STEP);
 	call_match("STEP");
+
 	step_ptr = expression();
+
+
 	match_token(DRAW);
 	call_match("DRAW");
+
 	match_token(L_BRACKET);
 	call_match("(");
+
 	x_ptr = expression();
+
 	match_token(COMMA);
 	call_match(",");
 	y_ptr = expression();
+
 	match_token(R_BRACKET);
 	call_match(")");
 	back("for_statement");
@@ -306,7 +324,7 @@ static struct expr_node* expression(void)
 	/*左右子树节点的指针*/
 	struct expr_node * left, * right;
 	/*当前记号*/
-	token_type tk_tmp;
+	enum token_type_t tk_tmp;
 
 	enter("expression");
 	/*分析左操作数得其语法树*/
@@ -331,7 +349,7 @@ static struct expr_node * term(void)
 {
 	/*term -- >factor{(MUL|DIV)factor}*/
 	struct expr_node * left, * right;
-	token_type tk_tmp;
+	enum token_type_t tk_tmp;
 
 	left = factor();
 	while (tk.type == MUL || tk.type == DIV) {
@@ -348,7 +366,7 @@ static struct expr_node * factor(void)
 	/*
 	 factor --> PLUS factor | MINUS factor | component
 	 */
-	struct expr_node * left, right;
+	struct expr_node * left, *right;
 
 	/*匹配一元加运算*/
 	if (tk.type == PLUS) {
@@ -398,7 +416,7 @@ static struct expr_node * atom(void)
 	/*
 	   atom --> CONST_ID | T | FUNC L_BRACKET expression R_BRACKET | L_BRACKET expression R_BRACKET
 	 */
-	struct token t = tk;
+	struct token_t t = tk;
 	struct expr_node * address, * tmp;
 
 	switch(tk.type) {
@@ -430,7 +448,7 @@ static struct expr_node * atom(void)
 
 
 /*生成语法树的一个节点*/
-static struct expr_node * make_expr_node(enum token_type opcode, ...)
+static struct expr_node * make_expr_node(enum token_type_t opcode, ...)
 {
 	struct expr_node * expr_ptr = (struct expr_node *)malloc(sizeof(struct expr_node));
 	expr_ptr->opcode = opcode;
@@ -444,7 +462,7 @@ static struct expr_node * make_expr_node(enum token_type opcode, ...)
 			expr_ptr->content.case_parm_ptr = &parameter;
 			break;
 		case FUNC:
-			expr_ptr->content.case_func.math_cunt_ptr = (func_ptr)va_arg(arg_ptr, func_ptr);
+			expr_ptr->content.case_func.math_func_ptr = (func_ptr)va_arg(arg_ptr, func_ptr);
 			expr_ptr->content.case_func.child = (struct expr_node *) va_arg(arg_ptr, struct expr_node*);
 			break;
 		default:

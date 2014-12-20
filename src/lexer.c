@@ -100,8 +100,8 @@ token get_token(void)
 	else {
 		switch (ch) {
 			case ';' : tk.type = SEMICO;	return tk;
-			case '{' : tk.type = L_BRACKET;	return tk;
-			case '}' : tk.type = R_BRACKET; return tk;
+			case '(' : tk.type = L_BRACKET;	return tk;
+			case ')' : tk.type = R_BRACKET; return tk;
 			case ',' : tk.type = COMMA;		return tk;
 			case '+' : tk.type = PLUS;		return tk;
 			/*如果是*的话有两种情况，要分别处理*/
