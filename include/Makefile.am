@@ -1,4 +1,4 @@
 EXTRA_DIST = 
-SUBDIRS = 
 noinst_HEADERS = 
-BUILT_SOURCES = lexer.h
+BUILT_SOURCES = lexer.h parser.h
+#CLEANFILES = $(BUILT_SOURCES)
