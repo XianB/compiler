@@ -111,11 +111,11 @@ token get_token(void)
 				if (ch == '-') {
 					while (ch != '\n' && ch != EOF) {
 						ch = get_char();
-						back_char(ch);
-						/*本次没有获到token,返回下一个token才行*/
-						return get_token();
-
 					}
+					back_char(ch);
+					/*本次没有获到token,返回下一个token才行*/
+					return get_token();
+
 				} else {
 					back_char(ch);
 					tk.type = MINUS;

@@ -1,0 +1,648 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	include/Makefile	/^ACLOCAL = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	src/Makefile	/^ACLOCAL = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	test/Makefile	/^ACLOCAL = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	include/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	src/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	test/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	include/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	src/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	test/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_LDFLAGS	test/Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib$/;"	m
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = $(RECURSIVE_TARGETS:-recursive=) \\$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoconf$/;"	m
+AUTOCONF	include/Makefile	/^AUTOCONF = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoconf$/;"	m
+AUTOCONF	src/Makefile	/^AUTOCONF = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoconf$/;"	m
+AUTOCONF	test/Makefile	/^AUTOCONF = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoheader$/;"	m
+AUTOHEADER	include/Makefile	/^AUTOHEADER = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoheader$/;"	m
+AUTOHEADER	src/Makefile	/^AUTOHEADER = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoheader$/;"	m
+AUTOHEADER	test/Makefile	/^AUTOHEADER = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run automake-1.11$/;"	m
+AUTOMAKE	include/Makefile	/^AUTOMAKE = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run automake-1.11$/;"	m
+AUTOMAKE	src/Makefile	/^AUTOMAKE = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run automake-1.11$/;"	m
+AUTOMAKE	test/Makefile	/^AUTOMAKE = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = mawk$/;"	m
+AWK	include/Makefile	/^AWK = mawk$/;"	m
+AWK	src/Makefile	/^AWK = mawk$/;"	m
+AWK	test/Makefile	/^AWK = mawk$/;"	m
+BUILT_SOURCES	include/Makefile	/^BUILT_SOURCES = lexer.h parser.h$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CC	include/Makefile	/^CC = gcc$/;"	m
+CC	src/Makefile	/^CC = gcc$/;"	m
+CC	test/Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	include/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	test/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	test/Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	include/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	src/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	test/Makefile	/^CFLAGS = -g -O2$/;"	m
+COMMA	include/lexer.h	/^	SEMICO, L_BRACKET, R_BRACKET, COMMA,$/;"	e	enum:token_type_t
+COMPILE	test/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	include/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	src/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	test/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	include/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	src/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	test/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h$/;"	m
+CONFIG_HEADER	include/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	src/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	test/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONST_ID	include/lexer.h	/^	CONST_ID,$/;"	e	enum:token_type_t
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPP	include/Makefile	/^CPP = gcc -E$/;"	m
+CPP	src/Makefile	/^CPP = gcc -E$/;"	m
+CPP	test/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	include/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	src/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	test/Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	test/Makefile	/^CTAGS = ctags$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	include/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	src/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	test/Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	test/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	include/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	src/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	test/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	include/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	src/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	test/Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	include/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	src/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	test/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = README $(am__configure_deps) $(srcdir)\/Makefile.am \\$/;"	m
+DIST_COMMON	include/Makefile	/^DIST_COMMON = $(noinst_HEADERS) $(srcdir)\/Makefile.am \\$/;"	m
+DIST_COMMON	src/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_COMMON	test/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SOURCES	include/Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SOURCES	src/Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SOURCES	test/Makefile	/^DIST_SOURCES = $(lexer_SOURCES) $(parser_SOURCES)$/;"	m
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DIV	include/lexer.h	/^	PLUS, MINUS, MUL, DIV, POWER,$/;"	e	enum:token_type_t
+DRAW	include/lexer.h	/^	TO, STEP, DRAW, FOR, FROM,$/;"	e	enum:token_type_t
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_C	include/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	src/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	test/Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	include/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	src/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	test/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+ECHO_T	include/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	src/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	test/Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	include/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	src/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	test/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ERRTOKEN	include/lexer.h	/^	ERRTOKEN$/;"	e	enum:token_type_t
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+ETAGS	test/Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXEEXT	include/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	src/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	test/Makefile	/^EXEEXT = $/;"	m
+EXTRA_DIST	include/Makefile	/^EXTRA_DIST = $/;"	m
+FOR	include/lexer.h	/^	TO, STEP, DRAW, FOR, FROM,$/;"	e	enum:token_type_t
+FROM	include/lexer.h	/^	TO, STEP, DRAW, FOR, FROM,$/;"	e	enum:token_type_t
+FUNC	include/lexer.h	/^	FUNC,$/;"	e	enum:token_type_t
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	include/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	src/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	test/Makefile	/^GREP = \/bin\/grep$/;"	m
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m
+HAVE_INTTYPES_H	config.h	5;"	d
+HAVE_MALLOC	config.h	9;"	d
+HAVE_MEMORY_H	config.h	12;"	d
+HAVE_MEMSET	config.h	15;"	d
+HAVE_STDBOOL_H	config.h	18;"	d
+HAVE_STDINT_H	config.h	21;"	d
+HAVE_STDLIB_H	config.h	24;"	d
+HAVE_STRINGS_H	config.h	27;"	d
+HAVE_STRING_H	config.h	30;"	d
+HAVE_SYS_STAT_H	config.h	33;"	d
+HAVE_SYS_TYPES_H	config.h	36;"	d
+HAVE_UNISTD_H	config.h	39;"	d
+HAVE__BOOL	config.h	42;"	d
+HEADERS	include/Makefile	/^HEADERS = $(noinst_HEADERS)$/;"	m
+INCLUDES	src/Makefile	/^INCLUDES = -I$(top_srcdir)\/include$/;"	m
+INCLUDES	test/Makefile	/^INCLUDES = -I$(top_srcdir)\/include $/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	include/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	src/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	test/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	include/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	src/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	test/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	include/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	src/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	test/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	include/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	src/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	test/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	include/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	src/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	test/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	include/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	src/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	test/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+IS	include/lexer.h	/^	ORIGIN, SCALE, ROT, IS,$/;"	e	enum:token_type_t
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	include/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	src/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	test/Makefile	/^LDFLAGS = $/;"	m
+LEN	include/lexer.h	16;"	d
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	include/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	src/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	test/Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIBS	include/Makefile	/^LIBS = $/;"	m
+LIBS	src/Makefile	/^LIBS = $/;"	m
+LIBS	test/Makefile	/^LIBS = $/;"	m
+LINK	test/Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	include/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	src/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	test/Makefile	/^LTLIBOBJS = $/;"	m
+L_BRACKET	include/lexer.h	/^	SEMICO, L_BRACKET, R_BRACKET, COMMA,$/;"	e	enum:token_type_t
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run makeinfo$/;"	m
+MAKEINFO	include/Makefile	/^MAKEINFO = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run makeinfo$/;"	m
+MAKEINFO	src/Makefile	/^MAKEINFO = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run makeinfo$/;"	m
+MAKEINFO	test/Makefile	/^MAKEINFO = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/missing --run makeinfo$/;"	m
+MINUS	include/lexer.h	/^	PLUS, MINUS, MUL, DIV, POWER,$/;"	e	enum:token_type_t
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	include/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	src/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	test/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MUL	include/lexer.h	/^	PLUS, MINUS, MUL, DIV, POWER,$/;"	e	enum:token_type_t
+NONTOKEN	include/lexer.h	/^	NONTOKEN,$/;"	e	enum:token_type_t
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	include/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	src/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	test/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	include/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	src/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	test/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	include/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	src/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	test/Makefile	/^OBJEXT = o$/;"	m
+ORIGIN	include/lexer.h	/^	ORIGIN, SCALE, ROT, IS,$/;"	e	enum:token_type_t
+PACKAGE	Makefile	/^PACKAGE = compiler$/;"	m
+PACKAGE	config.h	45;"	d
+PACKAGE	include/Makefile	/^PACKAGE = compiler$/;"	m
+PACKAGE	src/Makefile	/^PACKAGE = compiler$/;"	m
+PACKAGE	test/Makefile	/^PACKAGE = compiler$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = txianb@gmail.com$/;"	m
+PACKAGE_BUGREPORT	config.h	48;"	d
+PACKAGE_BUGREPORT	include/Makefile	/^PACKAGE_BUGREPORT = txianb@gmail.com$/;"	m
+PACKAGE_BUGREPORT	src/Makefile	/^PACKAGE_BUGREPORT = txianb@gmail.com$/;"	m
+PACKAGE_BUGREPORT	test/Makefile	/^PACKAGE_BUGREPORT = txianb@gmail.com$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = compiler$/;"	m
+PACKAGE_NAME	config.h	51;"	d
+PACKAGE_NAME	include/Makefile	/^PACKAGE_NAME = compiler$/;"	m
+PACKAGE_NAME	src/Makefile	/^PACKAGE_NAME = compiler$/;"	m
+PACKAGE_NAME	test/Makefile	/^PACKAGE_NAME = compiler$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = compiler 1.0$/;"	m
+PACKAGE_STRING	config.h	54;"	d
+PACKAGE_STRING	include/Makefile	/^PACKAGE_STRING = compiler 1.0$/;"	m
+PACKAGE_STRING	src/Makefile	/^PACKAGE_STRING = compiler 1.0$/;"	m
+PACKAGE_STRING	test/Makefile	/^PACKAGE_STRING = compiler 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = compiler$/;"	m
+PACKAGE_TARNAME	config.h	57;"	d
+PACKAGE_TARNAME	include/Makefile	/^PACKAGE_TARNAME = compiler$/;"	m
+PACKAGE_TARNAME	src/Makefile	/^PACKAGE_TARNAME = compiler$/;"	m
+PACKAGE_TARNAME	test/Makefile	/^PACKAGE_TARNAME = compiler$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	config.h	60;"	d
+PACKAGE_URL	include/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	src/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	test/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PACKAGE_VERSION	config.h	63;"	d
+PACKAGE_VERSION	include/Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PACKAGE_VERSION	src/Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PACKAGE_VERSION	test/Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PARSER_H_	include/parser.h	2;"	d
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	include/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	src/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	test/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PLUS	include/lexer.h	/^	PLUS, MINUS, MUL, DIV, POWER,$/;"	e	enum:token_type_t
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	include/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	src/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	test/Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	include/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	src/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	test/Makefile	/^POST_UNINSTALL = :$/;"	m
+POWER	include/lexer.h	/^	PLUS, MINUS, MUL, DIV, POWER,$/;"	e	enum:token_type_t
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	include/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	src/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	test/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	include/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	src/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	test/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	test/Makefile	/^PROGRAMS = $(sbin_PROGRAMS)$/;"	m
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \\$/;"	m
+ROT	include/lexer.h	/^	ORIGIN, SCALE, ROT, IS,$/;"	e	enum:token_type_t
+R_BRACKET	include/lexer.h	/^	SEMICO, L_BRACKET, R_BRACKET, COMMA,$/;"	e	enum:token_type_t
+SCALE	include/lexer.h	/^	ORIGIN, SCALE, ROT, IS,$/;"	e	enum:token_type_t
+SEMICO	include/lexer.h	/^	SEMICO, L_BRACKET, R_BRACKET, COMMA,$/;"	e	enum:token_type_t
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	include/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	src/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	test/Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	include/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	src/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	test/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	Makefile	/^SOURCES =$/;"	m
+SOURCES	include/Makefile	/^SOURCES =$/;"	m
+SOURCES	src/Makefile	/^SOURCES =$/;"	m
+SOURCES	test/Makefile	/^SOURCES = $(lexer_SOURCES) $(parser_SOURCES)$/;"	m
+STDC_HEADERS	config.h	66;"	d
+STEP	include/lexer.h	/^	TO, STEP, DRAW, FOR, FROM,$/;"	e	enum:token_type_t
+STRIP	Makefile	/^STRIP = $/;"	m
+STRIP	include/Makefile	/^STRIP = $/;"	m
+STRIP	src/Makefile	/^STRIP = $/;"	m
+STRIP	test/Makefile	/^STRIP = $/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = src test include$/;"	m
+T	include/lexer.h	/^	T,$/;"	e	enum:token_type_t
+TO	include/lexer.h	/^	TO, STEP, DRAW, FOR, FROM,$/;"	e	enum:token_type_t
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+VERSION	config.h	69;"	d
+VERSION	include/Makefile	/^VERSION = 1.0$/;"	m
+VERSION	src/Makefile	/^VERSION = 1.0$/;"	m
+VERSION	test/Makefile	/^VERSION = 1.0$/;"	m
+_LEXER_H	include/lexer.h	8;"	d
+abs_builddir	Makefile	/^abs_builddir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_builddir	include/Makefile	/^abs_builddir = \/home\/xianb\/WorkSpace\/compiler\/include$/;"	m
+abs_builddir	src/Makefile	/^abs_builddir = \/home\/xianb\/WorkSpace\/compiler\/src$/;"	m
+abs_builddir	test/Makefile	/^abs_builddir = \/home\/xianb\/WorkSpace\/compiler\/test$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_srcdir	include/Makefile	/^abs_srcdir = \/home\/xianb\/WorkSpace\/compiler\/include$/;"	m
+abs_srcdir	src/Makefile	/^abs_srcdir = \/home\/xianb\/WorkSpace\/compiler\/src$/;"	m
+abs_srcdir	test/Makefile	/^abs_srcdir = \/home\/xianb\/WorkSpace\/compiler\/test$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_builddir	include/Makefile	/^abs_top_builddir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_builddir	src/Makefile	/^abs_top_builddir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_builddir	test/Makefile	/^abs_top_builddir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_srcdir	include/Makefile	/^abs_top_srcdir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_srcdir	src/Makefile	/^abs_top_srcdir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+abs_top_srcdir	test/Makefile	/^abs_top_srcdir = \/home\/xianb\/WorkSpace\/compiler$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	include/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	src/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	test/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_fn_c_check_func	configure	/^ac_fn_c_check_func ()$/;"	f
+ac_fn_c_check_header_compile	configure	/^ac_fn_c_check_header_compile ()$/;"	f
+ac_fn_c_check_header_mongrel	configure	/^ac_fn_c_check_header_mongrel ()$/;"	f
+ac_fn_c_check_type	configure	/^ac_fn_c_check_type ()$/;"	f
+ac_fn_c_try_compile	configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_cpp	configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_c_try_link	configure	/^ac_fn_c_try_link ()$/;"	f
+ac_fn_c_try_run	configure	/^ac_fn_c_try_run ()$/;"	f
+add_char_token_string	src/lexer.c	/^void add_char_token_string(char ch)$/;"	f
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__aclocal_m4_deps	include/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__aclocal_m4_deps	src/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__aclocal_m4_deps	test/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	include/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	src/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	test/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	include/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	src/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	test/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	test/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__distuninstallcheck_listfiles	Makefile	/^am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \\$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__include	include/Makefile	/^am__include = include$/;"	m
+am__include	src/Makefile	/^am__include = include$/;"	m
+am__include	test/Makefile	/^am__include = include$/;"	m
+am__installdirs	test/Makefile	/^am__installdirs = "$(DESTDIR)$(sbindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	include/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	src/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	test/Makefile	/^am__leading_dot = .$/;"	m
+am__mv	test/Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__quote	include/Makefile	/^am__quote = $/;"	m
+am__quote	src/Makefile	/^am__quote = $/;"	m
+am__quote	test/Makefile	/^am__quote = $/;"	m
+am__relativize	Makefile	/^am__relativize = \\$/;"	m
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	include/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	src/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	test/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	include/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	src/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	test/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am_lexer_OBJECTS	test/Makefile	/^am_lexer_OBJECTS = lexer_driver.$(OBJEXT) lexer.$(OBJEXT)$/;"	m
+am_parser_OBJECTS	test/Makefile	/^am_parser_OBJECTS = parser_driver.$(OBJEXT) parser.$(OBJEXT) \\$/;"	m
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	config.status	/^as_fn_error ()$/;"	f
+as_fn_error	configure	/^as_fn_error ()$/;"	f
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f
+atom	src/parser.c	/^static struct expr_node * atom(void)$/;"	f	file:
+back	src/parser.c	10;"	d	file:
+back_char	src/lexer.c	/^void back_char(char ch)$/;"	f
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	include/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	src/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	test/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_alias	include/Makefile	/^build_alias = $/;"	m
+build_alias	src/Makefile	/^build_alias = $/;"	m
+build_alias	test/Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+builddir	include/Makefile	/^builddir = .$/;"	m
+builddir	src/Makefile	/^builddir = .$/;"	m
+builddir	test/Makefile	/^builddir = .$/;"	m
+call_match	src/parser.c	11;"	d	file:
+case_const	include/parser.h	/^		double case_const;$/;"	m	union:expr_node::__anon1
+case_func	include/parser.h	/^		} case_func;$/;"	m	union:expr_node::__anon1	typeref:struct:expr_node::__anon1::__anon3
+case_operator	include/parser.h	/^		} case_operator;$/;"	m	union:expr_node::__anon1	typeref:struct:expr_node::__anon1::__anon2
+case_parm_ptr	include/parser.h	/^		double * case_parm_ptr;$/;"	m	union:expr_node::__anon1
+child	include/parser.h	/^			struct expr_node * child;$/;"	m	struct:expr_node::__anon1::__anon3	typeref:struct:expr_node::__anon1::__anon3::expr_node
+close_scanner	src/lexer.c	/^void close_scanner(void)$/;"	f
+component	src/parser.c	/^static struct expr_node* component(void)$/;"	f	file:
+content	include/parser.h	/^	}content;$/;"	m	struct:expr_node	typeref:union:expr_node::__anon1
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	include/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	src/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	test/Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	include/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	src/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	test/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	test/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	include/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	src/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	test/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	include/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	src/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	test/Makefile	/^dvidir = ${docdir}$/;"	m
+enter	src/parser.c	9;"	d	file:
+err_msg	src/parser.c	/^void err_msg(unsigned line_no, char * descrip, char * string)$/;"	f
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	include/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	src/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	test/Makefile	/^exec_prefix = ${prefix}$/;"	m
+expr_node	include/parser.h	/^struct expr_node{$/;"	s
+expression	src/parser.c	/^static struct expr_node* expression(void)$/;"	f	file:
+factor	src/parser.c	/^static struct expr_node * factor(void)$/;"	f	file:
+fetch_token	src/parser.c	/^static void fetch_token(void)$/;"	f	file:
+filename	src/lexer.c	/^char * filename;$/;"	v
+for_statement	src/parser.c	/^static void for_statement(void)$/;"	f	file:
+fp	src/lexer.c	/^FILE * fp = NULL;$/;"	v
+func_ptr	include/lexer.h	/^	double (* func_ptr)(double); \/*若记号是函数，则是函数的指针*\/$/;"	m	struct:token_t
+func_ptr	include/parser.h	/^typedef double(*func_ptr)(double);$/;"	t
+get_char	src/lexer.c	/^char get_char(void)$/;"	f
+get_token	src/lexer.c	/^token get_token(void)$/;"	f
+host_alias	Makefile	/^host_alias = $/;"	m
+host_alias	include/Makefile	/^host_alias = $/;"	m
+host_alias	src/Makefile	/^host_alias = $/;"	m
+host_alias	test/Makefile	/^host_alias = $/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	include/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	src/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	test/Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	include/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	src/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	test/Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	include/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	src/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	test/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+init_scanner	src/lexer.c	/^bool init_scanner(const char * filename)$/;"	f
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/install-sh$/;"	m
+install_sh	include/Makefile	/^install_sh = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/install-sh$/;"	m
+install_sh	src/Makefile	/^install_sh = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/install-sh$/;"	m
+install_sh	test/Makefile	/^install_sh = ${SHELL} \/home\/xianb\/WorkSpace\/compiler\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	include/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	src/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	test/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	include/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	src/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	test/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	include/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	src/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	test/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+judge_key_token	src/lexer.c	/^token judge_key_token(const char * str)$/;"	f
+left	include/parser.h	/^			struct expr_node * left, * right;$/;"	m	struct:expr_node::__anon1::__anon2	typeref:struct:expr_node::__anon1::__anon2::expr_node
+lexeme	include/lexer.h	/^	char * lexeme;			\/*记号的属性*\/$/;"	m	struct:token_t
+lexer_DEPENDENCIES	test/Makefile	/^lexer_DEPENDENCIES =$/;"	m
+lexer_LDADD	test/Makefile	/^lexer_LDADD = -lm$/;"	m
+lexer_OBJECTS	test/Makefile	/^lexer_OBJECTS = $(am_lexer_OBJECTS)$/;"	m
+lexer_SOURCES	test/Makefile	/^lexer_SOURCES = lexer_driver.c $(top_srcdir)\/src\/lexer.c$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	include/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	src/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	test/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	include/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	src/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	test/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+lnum	src/lexer.c	/^int lnum;$/;"	v
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	include/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	src/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	test/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	include/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	src/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	test/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	test/lexer_driver.c	/^int main(int argc, char **argv)$/;"	f
+main	test/parser_driver.c	/^int main(int argc, char ** argv)$/;"	f
+make_expr_node	src/parser.c	/^static struct expr_node * make_expr_node(enum token_type_t opcode, ...)$/;"	f	file:
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	include/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	src/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	test/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+match_token	src/parser.c	/^static void match_token(enum token_type_t the_token)$/;"	f	file:
+math_func_ptr	include/parser.h	/^			func_ptr math_func_ptr;$/;"	m	struct:expr_node::__anon1::__anon3
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	include/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	src/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	test/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	include/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	src/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	test/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+noinst_HEADERS	include/Makefile	/^noinst_HEADERS = $/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	include/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	src/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	test/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+opcode	include/parser.h	/^	enum token_type_t opcode;		\/*操作类型, 比如PLUS, MINUS, MUL, DIV, POWER, FUNC, CONST_ID等操作*\/$/;"	m	struct:expr_node	typeref:enum:expr_node::token_type_t
+origin_statement	src/parser.c	/^static void origin_statement(void)$/;"	f	file:
+parameter	src/parser.c	/^double parameter = 0;$/;"	v
+parser	src/parser.c	/^void parser(char * src_filename)$/;"	f
+parser_DEPENDENCIES	test/Makefile	/^parser_DEPENDENCIES =$/;"	m
+parser_LDADD	test/Makefile	/^parser_LDADD = -lm$/;"	m
+parser_OBJECTS	test/Makefile	/^parser_OBJECTS = $(am_parser_OBJECTS)$/;"	m
+parser_SOURCES	test/Makefile	/^parser_SOURCES = parser_driver.c $(top_srcdir)\/src\/parser.c $(top_srcdir)\/src\/lexer.c$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	include/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	src/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	test/Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/compiler$/;"	m
+pkgdatadir	include/Makefile	/^pkgdatadir = $(datadir)\/compiler$/;"	m
+pkgdatadir	src/Makefile	/^pkgdatadir = $(datadir)\/compiler$/;"	m
+pkgdatadir	test/Makefile	/^pkgdatadir = $(datadir)\/compiler$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/compiler$/;"	m
+pkgincludedir	include/Makefile	/^pkgincludedir = $(includedir)\/compiler$/;"	m
+pkgincludedir	src/Makefile	/^pkgincludedir = $(includedir)\/compiler$/;"	m
+pkgincludedir	test/Makefile	/^pkgincludedir = $(includedir)\/compiler$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/compiler$/;"	m
+pkglibdir	include/Makefile	/^pkglibdir = $(libdir)\/compiler$/;"	m
+pkglibdir	src/Makefile	/^pkglibdir = $(libdir)\/compiler$/;"	m
+pkglibdir	test/Makefile	/^pkglibdir = $(libdir)\/compiler$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/compiler$/;"	m
+pkglibexecdir	include/Makefile	/^pkglibexecdir = $(libexecdir)\/compiler$/;"	m
+pkglibexecdir	src/Makefile	/^pkglibexecdir = $(libexecdir)\/compiler$/;"	m
+pkglibexecdir	test/Makefile	/^pkglibexecdir = $(libexecdir)\/compiler$/;"	m
+prefix	Makefile	/^prefix = \/home\/xianb\/WorkSpace\/compiler\/bin$/;"	m
+prefix	include/Makefile	/^prefix = \/home\/xianb\/WorkSpace\/compiler\/bin$/;"	m
+prefix	src/Makefile	/^prefix = \/home\/xianb\/WorkSpace\/compiler\/bin$/;"	m
+prefix	test/Makefile	/^prefix = \/home\/xianb\/WorkSpace\/compiler\/bin$/;"	m
+print_syntax_tree	src/parser.c	/^void print_syntax_tree(struct expr_node * root, int indent)$/;"	f
+program	src/parser.c	/^static void program(void)$/;"	f	file:
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	include/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	src/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	test/Makefile	/^program_transform_name = s,x,x,$/;"	m
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+ps	src/lexer.c	/^int ps = 0;$/;"	v
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+psdir	include/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	src/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	test/Makefile	/^psdir = ${docdir}$/;"	m
+right	include/parser.h	/^			struct expr_node * left, * right;$/;"	m	struct:expr_node::__anon1::__anon2	typeref:struct:expr_node::__anon1::__anon2::
+rot_statement	src/parser.c	/^static void rot_statement(void)$/;"	f	file:
+sbin_PROGRAMS	test/Makefile	/^sbin_PROGRAMS = lexer$(EXEEXT) parser$(EXEEXT)$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	include/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	src/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	test/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+scale_statement	src/parser.c	/^static void scale_statement(void)$/;"	f	file:
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	include/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	src/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	test/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+srcdir	include/Makefile	/^srcdir = .$/;"	m
+srcdir	src/Makefile	/^srcdir = .$/;"	m
+srcdir	test/Makefile	/^srcdir = .$/;"	m
+statement	src/parser.c	/^static void statement(void)$/;"	f	file:
+subdir	Makefile	/^subdir = .$/;"	m
+subdir	include/Makefile	/^subdir = include$/;"	m
+subdir	src/Makefile	/^subdir = src$/;"	m
+subdir	test/Makefile	/^subdir = test$/;"	m
+syntax_error	src/parser.c	/^static void syntax_error(int case_of)$/;"	f	file:
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	include/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	src/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	test/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzma -9 -c >$(distdir).tar.lzma$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+target_alias	include/Makefile	/^target_alias = $/;"	m
+target_alias	src/Makefile	/^target_alias = $/;"	m
+target_alias	test/Makefile	/^target_alias = $/;"	m
+term	src/parser.c	/^static struct expr_node * term(void)$/;"	f	file:
+tk	src/parser.c	/^static token tk;$/;"	v	file:
+token	include/lexer.h	/^typedef struct token_t token;$/;"	t	typeref:struct:token_t
+token_t	include/lexer.h	/^struct token_t {	\/*记号的数据结构*\/$/;"	s
+token_tab	src/lexer.c	/^static token token_tab[] = {$/;"	v	file:
+token_type	include/lexer.h	/^typedef enum token_type_t token_type;$/;"	t	typeref:enum:token_type_t
+token_type_t	include/lexer.h	/^enum token_type_t {$/;"	g
+tokenbuf	src/lexer.c	/^char tokenbuf[LEN];		\/*记号流字符的缓冲区*\/$/;"	v
+top_build_prefix	Makefile	/^top_build_prefix = $/;"	m
+top_build_prefix	include/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	src/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	test/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = .$/;"	m
+top_builddir	include/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	src/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	test/Makefile	/^top_builddir = ..$/;"	m
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m
+top_srcdir	include/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	src/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	test/Makefile	/^top_srcdir = ..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	include/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	src/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	test/Makefile	/^transform = $(program_transform_name)$/;"	m
+tree_trace	src/parser.c	12;"	d	file:
+type	include/lexer.h	/^	token_type type;		\/*记号的类别*\/	$/;"	m	struct:token_t
+value	include/lexer.h	/^	double value;			\/*如果记号是数值则有该值*\/$/;"	m	struct:token_t
